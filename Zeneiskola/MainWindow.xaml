@@ -1,0 +1,36 @@
+﻿<Window x:Class="Zeneiskola.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zeneiskola"
+        mc:Ignorable="d"
+        Title="Hangverseny" Height="999" Width="722">
+    <Grid Margin="0,0,0,-16">
+        <ListBox x:Name="ZeneDarabokLista" HorizontalAlignment="Left" Height="104" Margin="43,36,0,0" VerticalAlignment="Top" Width="631" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Zenei darabok" HorizontalAlignment="Left" Height="26" Margin="43,10,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <Label Content="Zeneszerzők" HorizontalAlignment="Left" Height="26" Margin="43,145,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <Button x:Name="Listazas_gomb" Content="Listázás" HorizontalAlignment="Left" Height="27" Margin="43,171,0,0" VerticalAlignment="Top" Width="631" Click="Listazas_gomb_Click" />
+        <ListBox x:Name="ZeneszerzokLista" HorizontalAlignment="Left" Height="104" Margin="43,198,0,0" VerticalAlignment="Top" Width="631" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Darabok keletkezése" HorizontalAlignment="Left" Height="26" Margin="43,307,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <Button x:Name="Darabok_keletkezese" Content="Számolás" HorizontalAlignment="Center" Height="27" Margin="0,333,0,0" VerticalAlignment="Top" Width="630" Click="Darabok_keletkezese_Click"/>
+        <Label Content="A komolyzenei darabok keletkezési éve 1680 és 1938 között terjed." HorizontalAlignment="Center" Height="26" Margin="0,365,0,0" VerticalAlignment="Top" Width="628"/>
+        <Label Content="10-es nehézségű komolyzenei darabok száma" HorizontalAlignment="Center" Height="26" Margin="0,391,0,0" VerticalAlignment="Top" Width="627" FontWeight="Bold"/>
+        <Label Content="Az adatfájlban 4db 10-es nehézségű komolyzenei darab van" HorizontalAlignment="Left" Height="26" Margin="49,449,0,0" VerticalAlignment="Top" Width="628"/>
+        <Button x:Name="Tizes_nehezsegu_gomb" Content="Számolás" HorizontalAlignment="Center" Height="27" Margin="0,422,0,0" VerticalAlignment="Top" Width="630" Click="Tizes_nehezsegu_gomb_Click"/>
+        <Label Content="Debussy darabjainak száma" HorizontalAlignment="Left" Height="26" Margin="53,0,0,0" VerticalAlignment="Center" Width="628" FontWeight="Bold"/>
+        <Button x:Name="Debussy_gomb" Content="Számolás" HorizontalAlignment="Left" Height="27" Margin="48,506,0,0" VerticalAlignment="Top" Width="630" Click="Debussy_gomb_Click"/>
+        <Label Content="Az adatfájlban 1db Debussy szerzőjű komolyzenei darab van" HorizontalAlignment="Left" Height="26" Margin="50,533,0,0" VerticalAlignment="Top" Width="628"/>
+        <Label Content="Választott darabok" HorizontalAlignment="Left" Height="26" Margin="50,559,0,0" VerticalAlignment="Top" Width="628" FontWeight="Bold"/>
+        <Label Content="Keresés" HorizontalAlignment="Center" Height="26" Margin="0,608,0,0" VerticalAlignment="Top" Width="628" FontWeight="Bold"/>
+        <Button x:Name="Valasztott_darabok_gomb" Content="Generálás" HorizontalAlignment="Left" Height="27" Margin="50,581,0,0" VerticalAlignment="Top" Width="630" Click="Valasztott_darabok_gomb_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="242,634,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="Kereses_gomb" Content="Keresés" HorizontalAlignment="Left" Height="27" Margin="50,674,0,0" VerticalAlignment="Top" Width="630" Click="Kereses_gomb_Click"/>
+        <ListBox x:Name="Kereses_lista" HorizontalAlignment="Left" Height="104" Margin="50,701,0,0" VerticalAlignment="Top" Width="631" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Symphony No.9" HorizontalAlignment="Left" Height="26" Margin="53,805,0,0" VerticalAlignment="Top" Width="628" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="239,836,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="Valasz_kuldese_gomb" Content="Válasz küldése" HorizontalAlignment="Left" Height="27" Margin="50,878,0,0" VerticalAlignment="Top" Width="630" Click="Valasz_kuldese_gomb_Click"/>
+        <Label Content="xHelyes válasz" HorizontalAlignment="Left" Height="26" Margin="53,905,0,0" VerticalAlignment="Top" Width="628"/>
+
+    </Grid>
+</Window>
